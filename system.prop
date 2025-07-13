@@ -79,6 +79,11 @@ ro.sys.usb.charging.only=yes
 ro.sys.usb.mtp.whql.enable=0
 ro.sys.usb.storage.type=mtp
 
+# DEBUGGABLE FOR DEV
+persist.sys.usb.config=mtp,adb
+ro.adb.secure=0
+ro.debuggable=1
+
 # WiFi
 mediatek.wlan.ctia=0
 ro.mediatek.wlan.p2p=1
