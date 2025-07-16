@@ -29,7 +29,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := garden
 PRODUCT_MANUFACTURER := xiaomi
-PRODUCT_NAME := lineage_garden
+PRODUCT_NAME := nad_garden
 
 # Build info
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
