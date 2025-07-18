@@ -112,5 +112,12 @@ void vendor_load_properties()
     string prop_partitions[] = { "", "odm.", "product.", "system.", "vendor." };
     for (const string &prop : prop_partitions) {
         property_override(string("ro.product.") + prop + string("model"), model);
+
+    // Override config hide sim 3rd props
+    property_override(string("ro.telephony.sim.count"), string("2"));
+    property_override(string("persist.vendor.radio.tsd.multisimmode"), string("2"));
+    property_override(string("ro.vendor.mtk_external_sim_only_slots"), string("2"));
+    property_override(string("persist.radio.multisim.config"), string("dsds"));
+       
     }
 }
