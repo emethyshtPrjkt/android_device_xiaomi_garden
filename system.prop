@@ -72,6 +72,9 @@ persist.internalAntenna.enable=true
 vendor.rild.libargs=-d /dev/ttyC0
 vendor.rild.libpath=mtk-ril.so
 
+# ( Trying ) Fix SIM Card Issues In Other LineageOS ROM
+ro.telephony.sim.count=2
+
 # USB
 persist.vendor.otg_control=true
 ro.sys.usb.bicr=no
